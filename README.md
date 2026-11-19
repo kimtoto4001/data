@@ -1,4 +1,73 @@
 # 김성완 202630106
+
+## 11월 12일
+
+## 이진 트리의 기본 구조와 데이터 연결
+
+## 노드 클래스 생성 tree_node()
+
+class tree_node:
+    def __init__(self):
+        self.data = data
+        self.left = None
+        self.right = None
+    
+## 첫 번째 노드 생성 
+
+node1 = tree_node()
+node1.data = "커피"
+
+## 두 번째 세 번째 노드 연결
+
+node2 = tree_node()
+node2.data = "우유"
+node1.left = node2
+
+node3 = tree_node()
+node3.data = "주스"
+node1.right = node3
+
+node2에 "우유" 저장 후 첫 번째 노드의 왼쪽에 연결함
+node3에 "주스" 저장 후 첫 번째 노드의 오른쪽에 연결함
+
+
+## 네 번째 다섯 번째 노드 연결
+
+node4 = tree_node()
+node4.data = "물"
+node2.left = node4
+
+node5 = tree_node()
+node5.data = "콜라"
+node2.right = node5
+
+node4에 "물"을 저장하고 두 번째 노드의 왼쪽에 연결함
+node5에 "콜라"를 저장하고 두 번째 노드의 오른쪽에 연결함
+
+## 여섯 번째 노드 연결
+
+node6 = tree_node()
+node6.data = "사이다"
+node3.left = node6
+
+node6에 "사이다"를 저장하고 세 번째 노드의 왼쪽 자식 노드로 연결함
+
+## 이진 트리 구조 출력
+
+print("=== 이진 트리 구조 ===")
+print(node1.data,end=" ")
+print()
+print(node1.left.data, node1.right.data,end=" ")
+print()
+print(node1.left.left.data, node1.left.right.data, node1.right.left.data)
+
+##  이진 트리 구조 결과
+
+=== 이진 트리 구조 ===
+커피
+우유 주스
+물 콜라 사이다
+
 ## 11월 5일
 
 ## 큐(Queue)의 기본 구조와 데이터 삽입 및 삭제
